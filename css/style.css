@@ -1,0 +1,13 @@
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --white: ;
+    --black: ;
+    --heading-font: ;
+    --text-font: ;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
