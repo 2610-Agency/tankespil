@@ -1,13 +1,111 @@
 :root {
     --primary-color: ;
     --secondary-color: ;
-    --white: ;
+    --bg-color: #3D5E89;
+    --red-light-bg-color: #ff5c5c;
+    --red-bg-color: #E64C4C;
+    --red-dark-bg-color: #962c2c;
+    --pink-bg-color: #DB5CB5;
+    --orange-bg-color: #ED9247;
+    --lightblue-bg-color: #8E8AFF;
+    --white: #ECECEC;
     --black: ;
-    --heading-font: ;
-    --text-font: ;
+    --heading-font: Fredoka;
+    --text-font: Montserrat;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+}
+
+@font-face {
+    font-family: Fredoka;
+    src: url(./../fonts/FredokaOne-Regular.ttf);
 }
 
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
 }
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.header-logo {
+    width: 5rem;
+}
+
+.rules-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    color: var(--white);
+    background-color: var(--red-bg-color);
+    box-shadow: 3px 5px 10px var(--red-dark-bg-color);
+    font-size: 1.2em;
+    font-family: var(--heading-font);
+    border-top: .15rem solid var(--red-light-bg-color);
+    border-left: .15rem solid var(--red-light-bg-color);
+}
+
+.bg-line-container {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-line {
+    position: relative;
+    top: -60vh;
+    background-color: var(--red-bg-color);
+    height: 250vh;
+    width: 100vw;
+    transform: rotate(20deg);
+    }
+
+.bg-line--scroll2 {
+    transform: rotate(-45deg);
+}
+
+.bg-line--scroll3 {
+    transform: rotate(45deg);
+    transition: ease-in;
+}
+
+.bg-line--scroll4 {
+    transform: rotate(-45deg);
+}
+
+section {
+    height: 100vh;
+}
+
+span {
+    width: 100%;
+    background: red;
+    display: block;
+    height: 5px;
+    margin-top: 20px; }
