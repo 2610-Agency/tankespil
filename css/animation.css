@@ -1,0 +1,219 @@
+.intro-animation-logo {
+    width: 20rem;
+    opacity: 100;
+    animation: logo-scale-move .75s 3.6s ease forwards
+}
+
+@keyframes logo-scale-move {
+    0% {
+        width: 20rem;
+    }
+    20% {
+        width: 25rem;
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translateX(0px) translateY(0px);
+    }
+    100% {
+        width: 6rem;
+        transform: translateX(-130px) translateY(-270px);
+    }
+}
+
+#intuition {
+    opacity: 100%;
+}
+
+.st1 {
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+.intuition-1 {
+    animation: text-up .5s ease forwards;
+}
+
+.intuition-2 {
+    animation: text-up .5s .2s ease forwards;
+}
+
+.intuition-3 {
+    animation: text-up .5s .4s ease forwards;
+}
+
+.intuition-4 {
+    animation: text-up .5s .6s ease forwards;
+}
+
+.intuition-5 {
+    animation: text-up .5s .8s ease forwards;
+}
+
+.intuition-6 {
+    animation: text-up .5s 1s ease forwards;
+}
+
+.intuition-7 {
+    animation: text-up .5s 1.2s ease forwards;
+}
+
+.intuition-8 {
+    animation: text-up .5s 1.4s ease forwards;
+}
+
+.intuition-9 {
+    animation: text-up .5s 1.6s ease forwards;
+}
+
+@keyframes text-up {
+    0% {
+        opacity: 0%;
+        transform: translateX(100px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+#headphones {
+    opacity: 0;
+    transform: translateX(100px) translateY(100px);
+    animation: headphones-move .5s 2s ease forwards;
+}
+
+#king {
+    opacity: 0;
+    transform: translateX(30px) translateY(180px);
+    animation: king-move .5s 2.2s ease forwards;
+}
+
+#sun {
+    opacity: 0;
+    transform: translateX(-30px) translateY(180px);
+    animation: sun-move .5s 2.4s ease forwards;
+}
+
+#fancy {
+    opacity: 0;
+    transform: translateX(-100px) translateY(100px);
+    animation: fancy-move .5s 2.6s ease forwards;
+}
+
+#licky {
+    opacity: 0;
+    transform: translateX(-100px) translateY(-100px);
+    animation: licky-move .5s 2.8s ease forwards;
+}
+
+#stareyes {
+    opacity: 0;
+    transform: translateX(-30px) translateY(-180px);
+    animation: stareyes-move .5s 3s ease forwards;
+}
+
+#ghost {
+    opacity: 0;
+    transform: translateX(30px) translateY(-180px);
+    animation: ghost-move .5s 3.2s ease forwards;
+}
+
+#sunglasses {
+    opacity: 0;
+    transform: translateX(100px) translateY(-100px);
+    animation: sunglasses-move .5s 3.4s ease forwards;
+}
+
+@keyframes fancy-move {
+    0% {
+        opacity: 0%;
+        transform: translateX(-100px) translateY(100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes headphones-move {
+    0% {
+        opacity: 0%;
+        transform: translateX(100px) translateY(100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes king-move {
+    0% {
+        opacity: 0%;
+        transform: translateX(30px) translateY(180px);
+
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes sun-move {
+    0% {
+        opacity: 0%;
+        transform: translateX(-30px) translateY(180px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes licky-move {
+    0% {
+        opacity: 0%;
+        transform: translateX(-100px) translateY(-100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes stareyes-move {
+    0% {
+        opacity: 0%;
+        transform: translateX(-30px) translateY(-180px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes ghost-move {
+    0% {
+        opacity: 0%;
+        transform: translateX(30px) translateY(-180px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes sunglasses-move {
+    0% {
+        opacity: 0%;
+        transform: translateX(100px) translateY(-100px);
+
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px) translateY(0px);
+    }
+}
