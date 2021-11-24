@@ -513,13 +513,16 @@ body {
 /* CONTACT  */
 
 .contact {
-    margin: 42rem 2rem 0 2rem;
+    margin-top: 42rem;
+    height: 100vh;
+    width: calc(100vw - 4rem);
 }
 
 .form-container {
-    width: 100%;
+    width: calc(100vw - 4rem);
     height: 32rem;
     display: flex;
+    margin-left: 2rem;
     flex-direction: column;
     align-items: center;
     background-color: var(--white);
@@ -627,7 +630,7 @@ margin-top: 8.5rem;
     background-color: var(--white);
     top: 0;
     left: 1.7rem;
-  
+}
 .form-input {
     height: 2.5rem;
     border-radius: 1rem;
@@ -681,6 +684,8 @@ margin-top: 8.5rem;
     font-size: var(--text-size);
 }
 
+/* FOOTER */
+
 footer {
     height: 100vh;
     margin-top: 2rem;
@@ -723,5 +728,11 @@ footer {
 
 .footer-tankespil-logo {
     width: 10rem;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+.footer-agency-logo {
+    width: 15rem;
     align-self: center;
 }
