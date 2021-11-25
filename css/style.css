@@ -104,7 +104,7 @@ header {
     align-items: center;
     text-align: center;
     width: 8rem;
-    height: 4rem;
+    height: 5rem;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
     font-size: 1.2em;
@@ -119,7 +119,7 @@ header {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 9rem;
+    height: 10rem;
     justify-content: space-between;
 }
 
@@ -128,9 +128,19 @@ header {
     width: 10rem;
 }
 
+.to-order-btn:hover {
+    transition: background-color .3s ease-in-out;
+    background-color: var(--pink-bg-color);
+}
+
 .read-more-btn {
     background-color: var(--lightblue-bg-color);
-    height: 3.5rem;
+    height: 4rem;
+}
+
+.read-more-btn:hover {
+    transition: background-color .3s ease-in-out;
+    background-color: var(--pink-bg-color);
 }
 
 .intro-ani-container {
@@ -146,6 +156,29 @@ header {
     display: flex;
 }
 
+.intro-box-animation {
+    width: 100vw;
+    top: -25rem;
+    position: relative;
+    margin-left: calc(50% - 10rem);
+    z-index: -1;
+}
+
+.intro-box-top {
+    position: absolute;
+    width: 20rem;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.intro-box-bottom {
+    position: absolute;
+    top: 2rem;
+    left: .25rem;
+    width: 19.5rem;
+}
+
 /* ABOUT SECTION */
 
 .about {
@@ -154,7 +187,7 @@ header {
 .about-clock-container {
     display: flex;
     justify-content: space-between;
-    height: 5rem;
+    height: 4rem;
     align-items: center;
     margin: 3rem 0;
 }
@@ -165,12 +198,21 @@ header {
 }
 
 .about-clock {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     border: solid .2rem var(--white);
     position: relative;
     background: var(--bg-color);
+}
+
+.about-clock-btn {
+    width: 1rem;
+    height: .35rem;
+    display: flex;
+    border-radius: 1rem;
+    background-color: var(--white);
+    margin: 0 auto .2rem auto;
 }
 
 .about-clock::before {
@@ -196,13 +238,13 @@ header {
 }
 
 .about-clock__arm {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: var(--bg-color);
     position: absolute;
-    top: calc(50% - 2rem);
-    left: calc(50% - 2rem);
+    top: calc(50% - 1.5rem);
+    left: calc(50% - 1.5rem);
     z-index: 1;
     animation: clock 60s linear infinite;
 }
@@ -211,7 +253,7 @@ header {
     position: absolute;
     content: '';
     width: 4px;
-    height: 1.8rem;
+    height: 1rem;
     border-radius: 1rem;
     background-color: var(--white);
     top: calc(50% - .1rem);
@@ -220,13 +262,13 @@ header {
 }
 
 .about-clock__arm-short {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0%);
     position: absolute;
-    top: calc(50% - 2rem);
-    left: calc(50% - 2rem);
+    top: 0;
+    left: 0;
     z-index: 1;
     animation: clock 2s linear infinite;
 }
@@ -240,6 +282,17 @@ header {
     top: calc(50% - .7rem);
     left: calc(50% + .7rem);
     transform: rotate(90deg)
+}
+
+.about-clock-center {
+    width: .4rem;
+    height: .4rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    top: calc(50% - .2rem);
+    left: calc(50% - .2rem);
 }
 
 @keyframes clock {
@@ -488,13 +541,18 @@ body {
     position: absolute;
     z-index: 1;
     clip-path: polygon(0% 20%, 100% 5%, 100% 100%, 0% 90%, 0% 70%);
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
     background-color: var(--lightblue-bg-color);
     box-shadow: var(--box-shadow);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    padding: 10rem 2rem 0 2rem;
+}
+
+.about-bg-blue h2 {
+    margin-bottom: 2rem;
 }
 
 .about-bg-blue-heading {
@@ -519,9 +577,9 @@ body {
 /* CONTACT  */
 
 .contact {
-    margin-top: 42rem;
+    margin-top: 30rem;
     height: 100vh;
-    width: calc(100vw - 4rem);
+    width: 100vw;
 }
 
 .form-container {
@@ -540,7 +598,6 @@ body {
 .form-input, .form-textarea {
     width: 80%;
 }
-
 
 /* SETUP STYLING */
 .setup-container {
@@ -673,11 +730,11 @@ margin-top: 8.5rem;
 }
 
 .contact-heading {
-    margin: 3rem 0;
+    margin: 3rem 2rem;
 }
 
 .contact-text {
-    margin: 2rem 0;
+    margin: 0 2rem;
 }
 
 .form-btn {
@@ -701,7 +758,7 @@ footer {
 .footer-bg-green {
     position: absolute;
     clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
-    height: 115vh;
+    height: 100vh;
     width: 100vw;
     background-color: var(--green-bg-color);
     box-shadow: var(--box-shadow);
@@ -729,17 +786,17 @@ footer {
 }
 
 .some-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .footer-tankespil-logo {
-    width: 10rem;
+    width: 6rem;
     align-self: center;
     margin-bottom: 2rem;
 }
 
 .footer-agency-logo {
-    width: 15rem;
+    width: 12rem;
     align-self: center;
 }
