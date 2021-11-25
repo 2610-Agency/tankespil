@@ -153,9 +153,15 @@ header {
 }
 .about-clock-container {
     display: flex;
+    justify-content: space-between;
     height: 5rem;
     align-items: center;
     margin: 3rem 0;
+}
+
+.about-text {
+    text-align: left;
+    width: 13rem;
 }
 
 .about-clock {
