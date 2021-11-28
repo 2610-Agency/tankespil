@@ -35,6 +35,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .centered {
@@ -54,6 +55,9 @@
 
 body {
     background-color: var(--bg-color);
+    overflow-x: hidden;
+    text-align: center;
+    width: 100vw;
     overflow-x: hidden !important;
     width: 100vw !important;
 }
@@ -158,28 +162,117 @@ header {
 
 .intro-box-animation {
     width: 100vw;
-    top: -25rem;
-    position: relative;
-    margin-left: calc(50% - 10rem);
-    z-index: -1;
+    top: 0rem;
+    position: absolute;
+    overflow-x: hidden;
+    left: 0;
 }
 
 .intro-box-top {
     position: absolute;
     width: 20rem;
-    top: 0;
-    left: 0;
+    top: 15rem;
+    left: calc(50% - 10rem);
     z-index: 1;
 }
 
 .intro-box-bottom {
     position: absolute;
-    top: 2rem;
-    left: .25rem;
+    top: 17rem;
+    left: calc(50% - 9.75rem);
     width: 19.5rem;
 }
 
+.intro-animation-rotation-circle1 {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    position: relative;
+    top: 6rem;
+    left: 50%;
+    z-index: 2;
+}
+
+.intro-animation-rotating-card1 {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 2rem);
+    height: 4rem;
+    width: 4rem;
+}
+
+.intro-animation-rotation-circle2 {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    position: relative;
+    top: -20rem;
+    left: calc(50% - 30rem);
+    z-index: 2;
+}
+
+.intro-animation-rotating-card2 {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 2rem);
+    height: 4rem;
+    width: 4rem;
+}
+
+.intro-animation-rotation-circle3 {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    position: relative;
+    top: -52rem;
+    left: 50%;
+    z-index: 2;
+}
+
+.intro-animation-rotating-card3 {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 2rem);
+    height: 4rem;
+    width: 4rem;
+}
+
+.intro-animation-rotation-circle4 {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    position: relative;
+    top: -82rem;
+    left: calc(50% - 30rem);
+    z-index: 2;
+}
+
+.intro-animation-rotating-card4 {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 2rem);
+    height: 4rem;
+    width: 4rem;
+}
+
+
 /* ABOUT SECTION */
+
+.bg-overlay-mobile {
+    position: absolute;
+    top: 60vh;
+    left: 0;
+    z-index: -10;
+    width: 100vw;
+    height: 150vh;
+    background-image: url(./../images/background/bg-mobile-overlay.png);
+    background-size: 300%;
+    background-position-x: -20rem;
+}
 
 .about {
     margin: 5rem 2rem 0 2rem;
@@ -509,14 +602,6 @@ header {
 .pink-rules {
     background-color: #DB5CB5;
 }
-* { box-sizing: border-box; }
-
-body {
-  font-family: sans-serif;
-  text-align: center;
-  overflow-x: hidden !important;
-  width: 100vw !important;
-}
 
 .scene {
   margin: 40px 0;
@@ -550,18 +635,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  filter: drop-shadow(var(--box-shadow));
-  position: absolute;
-  width: 190px;
-  height: 120px;
-  left: 10px;
-  top: 10px;
-  line-height: 116px;
-  font-size: 80px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  transition: transform 1s, opacity 1s;
+    filter: drop-shadow(var(--box-shadow));
+    position: absolute;
+    width: 190px;
+    height: 120px;
+    left: 10px;
+    top: 10px;
+    line-height: 116px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: transform 1s, opacity 1s;
 }
 
 .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(200px); }
@@ -613,6 +698,18 @@ body {
 }
 
 /* CONTACT  */
+
+.contact-bg-overlay-mobile {
+    position: absolute;
+    top: 320vh;
+    left: 0;
+    z-index: -10;
+    width: 100vw;
+    height: 150vh;
+    background-image: url(./../images/background/bg-mobile-overlay.png);
+    background-size: 300%;
+    background-position-x: -25rem;
+}
 
 .contact {
     margin-top: 30rem;
@@ -898,4 +995,69 @@ footer {
 .footer-agency-logo {
     width: 12rem;
     align-self: center;
+}
+
+@media only screen and (min-width: 768px){
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .intro-box-animation {
+        top: 10rem;
+    }
+    .creator-client-container {
+        width: 100vw;
+        display: flex;
+        margin-left: 0rem;
+    }
+    .creator-client-image {
+        width: 30rem;
+    }
+    .about-bg-orange-heading {
+        margin-right: 15rem;
+    }
+    .about-bg-blue-heading {
+        margin-top: 5rem;
+    }
+    .about-bg-blue {
+        height: 60vh;
+    }
+    .about-clock-container {
+        justify-content: space-evenly;
+    }
+    .contact {
+        margin: 20rem 0 0 0;
+    }
+    .contact-text {
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+    }
+    .form-container {
+        width: 20rem;
+        margin-left: calc(50% - 10rem);
+    }
+    footer {
+        margin-top: -10rem;
+    }
+    .footer-content-container {
+        padding-top: 8rem;
+    }
+}
+
+@media only screen and (min-width: 1080px){
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .intro-box-animation {
+        top: 0;
+    }
+
+    .intro-btn-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .intro-btn-container a {
+        margin: 0 2rem;
+    }
 }
