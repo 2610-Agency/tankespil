@@ -17,6 +17,7 @@
 
 <section class="setup-container">
     <h1 class="setup-heading">Opsætning</h1>
+    <p class="setup-description">Spillet består af 5 runder. I hver runde skal der ligge ét emnekort og fire billeder på bordet. I første runde bruger i et emnekort, der er ét point værd, næste runde 2 point osv.</p>
     <div class="setup-flex">
         <div class="setup-numbers">
             <div class="setup-line"></div>
@@ -25,9 +26,15 @@
             <p class="setup-number-green">3</p>
         </div>
         <div class="setup-text">
-            <p class="setup-text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, labore!</p>
-            <p class="setup-text-second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, labore!</p>
-            <p class="setup-text-third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, labore!</p>
+            <div>
+                <p class="setup-text-first">Træk et emnekort (1 point værd) og læg det åbent på bordet</p>
+            </div>
+            <div>
+                <p class="setup-text-second">Træk fire billeder og læg dem på bordet ved siden af hinanden</p>
+            </div>
+            <div>
+                <p class="setup-text-third">Alle spillere tager to spillerkort i ens farve og to klips.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -37,35 +44,63 @@
         <div class="gallery-cell red-rules">
             <img class="cell-image" src="./images/webdesign-ikon.svg" alt="">
             <div class="cell-container">
-                <h2 class="cell-heading sub-heading white">Website</h2>
-                <p class="cell-text main-text white">
-                    Personligt designet hjemmesider og det bedste valg til dig
-                    som ønsker en informationsside som
-                    viser hvem du eller din virksomhed er.</p>
+                <h2 class="cell-heading sub-heading white">1</h2>
+                <p class="cell-text main-text white">I vælger nu samtidig hvilket billede fra bordet, som I synes bedst passer til emnet. 
+                    <br> <br>
+                    Det gør I ved at sætte en klips fast på det tilsvarende nummer på et af jeres spillerkort.</p>
             </div>
         </div>
         <div class="gallery-cell yellow-rules">
             <img class="cell-image" src="./images/ux-ui.svg" alt="">
             <div class="cell-container">
-                <h2 class="cell-heading sub-heading white">Website</h2>
-                <p class="cell-text main-text white">
-                    Personligt designet hjemmesider og det bedste valg til dig
-                    som ønsker en informationsside som
-                    viser hvem du eller din virksomhed er.</p>
+                <h2 class="cell-heading sub-heading white">2</h2>
+                <p class="cell-text main-text white">Læg spillerkortet med bagsiden opad, så ingen kan se, hvad I har valgt.</p>
+
             </div>
         </div>
         <div class="gallery-cell green-rules">
             <img class="cell-image" src="./images/seo-icon.svg" alt="">
             <div class="cell-container">
-                <h2 class="cell-heading sub-heading white">Website</h2>
-                <p class="cell-text main-text white">
-                    Personligt designet hjemmesider og det bedste valg til dig
-                    som ønsker en informationsside som
-                    viser hvem du eller din virksomhed er.</p>
+                <h2 class="cell-heading sub-heading white">3</h2>
+                <p class="cell-text main-text white">Det andet spillerkort bruger I til at gætte på en anden spiller. Vælg en anden spiller og gæt hans /hendes billede ved at sætte en klips på det tilsvarende nummer på spillerkortet. Giv det til spilleren med bagsiden opad.</p>
+            </div>
+        </div>
+        <div class="gallery-cell blue-rules">
+            <img class="cell-image" src="./images/seo-icon.svg" alt="">
+            <div class="cell-container">
+                <h2 class="cell-heading sub-heading white">4</h2>
+                <p class="cell-text main-text white">Én ad gangen afslører I nu jeres eget valg, og dernæst hvad andre eventuelt har gættet på jer. Hvis nogen har gættet dit valg af billede, så får de ligeså mange point, som der står på emnekortet.</p>
+            </div>
+        </div>
+        <div class="gallery-cell pink-rules">
+            <img class="cell-image" src="./images/seo-icon.svg" alt="">
+            <div class="cell-container">
+                <h2 class="cell-heading sub-heading white">5</h2>
+                <p class="cell-text main-text white">Start en ny runde med næste emne og fire nye billeder. Spillet slutter efter 5. runde og spilleren med flest point... har vundet!
+                    <br> <br>
+                    <strong>God fornøjelse! </strong> 
+                    </p>
+
             </div>
         </div>
     </div>
 </section>
+<section class="point-container">
+    <h3 class="point-heading">Point system</h3>
+    <div class="point-flex">
+        <div class="point-chips">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+        </div>
+        <div class="point-text-container">
+            <p class="point-text">Point bliver optjent af værdien af emnekortet, hvis du har gættet hvilket kort personen du gav billedet har valgt.</p>
+        </div>
+    </div>
+</section>
+
     <script src="./js/flickity.pkgd.min.js"></script>
 </body>
 </html>
