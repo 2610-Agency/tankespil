@@ -340,6 +340,7 @@
     100% {
         opacity: 100;
         transform: rotate(180deg) scale(1.5);
+        opacity: 0;
     }
 }
 
@@ -363,6 +364,7 @@
     100% {
         opacity: 100;
         transform: rotate(-180deg) scale(1.5);
+        opacity: 0;
     }
 }
 
@@ -386,6 +388,7 @@
     100% {
         opacity: 100;
         transform: rotate(180deg) scale(1.5);
+        opacity: 0;
     }
 }
 
@@ -409,6 +412,7 @@
     100% {
         opacity: 100;
         transform: rotate(-180deg) scale(1.5);
+        opacity: 0;
     }
 }
 
@@ -433,6 +437,11 @@
 }
 
 @media only screen and (min-width: 1080px) {
+    
+    .intro-box-animation {
+        margin-top: 10rem;
+    }
+    
     @keyframes logo-scale-move {
         0% {
             width: 20rem;
@@ -446,7 +455,7 @@
         }
         100% {
             width: 6rem;
-            transform: translateX(-520px) translateY(-260px);
+            transform: translateX(-530px) translateY(-350px);
         }
     }
 }
